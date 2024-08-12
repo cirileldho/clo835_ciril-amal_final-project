@@ -33,7 +33,7 @@ jobs:
         # Docker push for the standard Dockerfile image
         docker push $ECR_REGISTRY/my-app:webapp-$IMAGE_TAG
         
-        # Docker build using Dockerfile_mysqli
+        # Docker build using Dockerfile_mysql
         docker build -t $ECR_REGISTRY/my-mysql:mysql-$IMAGE_TAG -f Dockerfile_mysql .
         # Docker push for the Dockerfile_mysql image
         docker push $ECR_REGISTRY/my-mysql:mysql-$IMAGE_TAG
