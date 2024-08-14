@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: final
+data:
+  BACKGROUND_IMAGE_URL: "https://ciril.s3.amazonaws.com/sunset.jpg"
+  HEADER_NAME: "Ciril - Amal Final Project Website 1"
+  DBHOST: "mysql"  # Service name or hostname
+  DBPORT: "3306"
